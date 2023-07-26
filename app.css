@@ -146,7 +146,7 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 50vh;
+    height: 90vh;
     font-size: 1.6rem;
   }
 
@@ -168,7 +168,7 @@
 
   .navbar__links{
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     display: table;
   }
@@ -330,12 +330,12 @@
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 90vh;
+    height: 80vh;
   }
 
   .main__content{
     text-align: center;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
   }
 
   .main__content h1{
@@ -357,7 +357,7 @@
   }
 
   .Artwork{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     height: 60%;
     width: 60%;
   }
@@ -451,7 +451,8 @@
 }
 
 .ducks{
-  float: left;
+  display: flexbox;
+  flex-wrap: wrap;
   margin: 1rem;
   height: 22%;
   width: 22%;
@@ -461,13 +462,18 @@
  
 }
 
-.img__container::after{
-  content: "";
-  clear: both;
-  display: table;
+.img__container{
+  text-align: center;
 }
+
+
+
+
+
+
+
 /* Mobile Responsive  */
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 1195px){
   .introduction{
     height: 120vh;
   }
@@ -478,8 +484,7 @@
     align-items: center;
     justify-self: center;
     width: 100%;
-    margin: 0 auto;
-    height: 100vh;
+    height: 95vh;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -499,16 +504,21 @@
 
 
   .img__container{
-    text-align: center;
-    position: center;
+    align-items: center;
+  
   }
 
+
+
   .ducks{
-    margin-top: 0.5rem;
-    height: 22%;
-    width: 22%;
-    justify-self: center;
+    margin-top: 1rem;
+    height: 25%;
+    width: 25%;
+    display: flexbox;
+    flex-wrap: wrap;
+
   }
+
 }
 
 /* Services Section CSS*/
@@ -604,7 +614,7 @@
 
 @media screen and (max-width: 960px) {
   .services{
-    height: 1200px;
+    height: 1400px;
   }
 
   .services h1 {
@@ -620,7 +630,7 @@
   }
 
   .services h1{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .services__card {
@@ -776,4 +786,3 @@
   }
   
 }
-
