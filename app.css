@@ -421,7 +421,7 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height:  85vh;
+  height:  80vh;
   background-color: #45382f;
   z-index: 1;
   width: 100%;
@@ -444,7 +444,7 @@
 
 .introduction p {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: #fff;
   display: flex;
   
