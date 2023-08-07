@@ -46,7 +46,7 @@
   
   #navbar__logo img{
     float: left;
-    width: 60px;
+    width: 55px;
     height: 70px;
     background: #131313;
     margin-right: 15px;
@@ -402,15 +402,59 @@
     }
     
   }
+
+  /* Abount Intro Section */
+  .about__intro{
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:500px;
+  }
+
+  .about__intro h1{
+    margin-top: 4rem;
+    color: #e9e9e9;
+    display: flex;
   
+  }
+
+  .about__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+    margin-top: 2rem;
+  }
+
+  .about__card{
+    color: #e9e9e9;
+    margin: 1rem;
+    height: 320px;
+    width: 400px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #723103;
+    
+  }
+
+
+
+  .about__card p{
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+
   /* Services Section CSS*/
   .services{
     background-color: #181818;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
   }
+
   
   .services h1{
     background-color: #c46521;
@@ -448,7 +492,7 @@
       to bottom, rgba(0,0,0,0) 0%,
        rgba(17,17,17,0.6) 100%
        ),
-      url(/Pictures/pic1.jpg);
+      url(/Pictures/Tokamak\ Energy.jpeg);
     background-size: cover;
     position: relative;
     color: #fff;
@@ -459,7 +503,56 @@
       to bottom, rgba(0,0,0,0) 0%,
        rgba(17,17,17,0.6) 100%
        ),
-      url(/Pictures/pic2.jpg);
+      url(/Pictures/First\ Light\ Fusion.jpeg);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+
+  .services__card:nth-child(3) {
+    background-image: linear-gradient(
+      to bottom, rgba(0,0,0,0) 0%,
+       rgba(17,17,17,0.6) 100%
+       ),
+      url(/Pictures/Greencoat\ Wind.png);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+
+  .services__card:nth-child(4) {
+    background-image: linear-gradient(
+      to bottom, rgba(0,0,0,0) 0%,
+       rgba(17,17,17,0.6) 100%
+       ),
+      url(/Pictures/Carbon\ Clean.jpeg);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+
+
+  .services__card:nth-child(5) {
+    background-image: linear-gradient(
+      to bottom, rgba(0,0,0,0) 0%,
+       rgba(17,17,17,0.6) 100%
+       ),
+      url(/Pictures/Climeworks.jpeg);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+
+
+  .services__card:nth-child(6) {
+    background-image: linear-gradient(
+      to bottom, rgba(0,0,0,0) 0%,
+       rgba(17,17,17,0.6) 100%
+       ),
+      url(/Pictures/Statkraft.webp);
+    background-size: cover;
+    position: relative;
+    color: #fff;
   }
   
   .services h2 {
@@ -494,9 +587,13 @@
     cursor: pointer;
   }
   
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1895px) {
     .services{
-      height: 1000px;
+      height: 1300px;
+    }
+
+    .services__container{
+      height: 1100px;
     }
   
     .services h1 {
@@ -506,13 +603,13 @@
     
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1258px) {
     .services{
-      height: 1400px;
+      height: 1300px;
     }
   
     .services h1{
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
   
     .services__card {
@@ -521,6 +618,34 @@
     
   }
   
+  @media screen and (max-width: 995px){
+    .services{
+      height: 1800px;
+    }
+
+    .services h1{
+      font-size: 1.9rem;
+    }
+
+    .services__card{
+      width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 665px){
+    .services{
+      height:3500px;
+    }
+
+    .services h1{
+      font-size: 1.9rem;
+    }
+
+    .services__card{
+      width: 300px;
+    }
+  }
+
   /* Footer CSS */
   .footer__container{
     background-color: #181818;
